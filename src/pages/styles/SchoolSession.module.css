@@ -1,0 +1,27 @@
+.session-container{
+    min-height: 100vh;
+}
+
+.session-table th{
+    background-color: #1D546C;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    text-align: center;    
+}
+
+.session-table td{
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.createSessionBtn{
+    background-color: #1D546C;
+    color: white;
+}
+.createSessionBtn:hover{
+    background-color: #1A3D64;
+    color: white;
+}

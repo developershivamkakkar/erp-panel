@@ -1,0 +1,23 @@
+/* header background stays in module scope */
+.headerNavbar {
+  background-color: #F4F4F4 !important;
+}
+
+/* make parent links the color you want (inactive) */
+:global(.main-header .nav-link) {
+  color: #0C2B4E !important;
+}
+
+/* icons inside nav-link (force color) */
+:global(.main-header .nav-link i),
+:global(.main-header .nav-link .fas),
+:global(.main-header .nav-link .fa) {
+  color: #0C2B4E !important;
+  font-size: 18px !important;
+}
+
+/* hover colors */
+:global(.main-header .nav-link:hover),
+:global(.main-header .nav-link:hover i) {
+  color: #1D546C !important;
+}

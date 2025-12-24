@@ -1,0 +1,33 @@
+.mainSidebar {
+  background-color: #0C2B4E;
+}
+
+.inputGroup {
+  background-color: #1D546C;
+  color: white;
+}
+
+
+.searchIcon {
+  color: white;
+}
+
+/* Inactive links */
+:global(.nav-link) {
+  color: white !important;
+}
+
+:global(.nav-link i) {
+  color: white !important;
+}
+
+/* Active link */
+:global(.nav-link.active) {
+  background-color: #1D546C !important;  /* change as you want */
+  color: #ffffff !important;
+}
+
+:global(.nav-link.active i) {
+  color: #ffffff !important;
+}
+

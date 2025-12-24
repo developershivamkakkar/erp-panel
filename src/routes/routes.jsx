@@ -4,6 +4,8 @@ import Dashboard from "../pages/Dashboard";
 import TenantLogin from "../pages/TenantLogin";
 import TenantLogout from "../components/TenantLogout";
 import AuthRoute from "../components/AuthRoute";
+import SchoolSessionPage from "../pages/SchoolSessionPage";
+import SchoolBoardPage from "../pages/SchoolBoardPage";
 
 export const router = createBrowserRouter([
   {
@@ -21,8 +23,24 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: (
-          <AuthRoute type="protected">
+          <AuthRoute>
             <Dashboard />
+          </AuthRoute>
+        ),
+      },
+      {
+        path: "/manage-sessions",
+        element: (
+          <AuthRoute>
+            <SchoolSessionPage />
+          </AuthRoute>
+        ),
+      },
+      {
+        path: "/manage-boards",
+        element: (
+          <AuthRoute>
+            <SchoolBoardPage />
           </AuthRoute>
         ),
       },

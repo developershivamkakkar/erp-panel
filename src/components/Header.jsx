@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import styles from "./styles/Header.module.css";
 
 function Header() {
   return (
     <div>
       <div>
-        <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav
+          className={`main-header navbar navbar-expand navbar-light ${styles.headerNavbar}`}
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
@@ -13,56 +16,20 @@ function Header() {
                 data-widget="pushmenu"
                 role="button"
               >
-                <i className="fas fa-bars" />
+                <i className={`fas fa-bars ${styles.headerIcon}`} />
               </Link>
             </li>
+
             <li className="nav-item d-none d-sm-inline-block">
-              <Link to="#" className="nav-link">
-                Home
-              </Link>
+              <Link to="#" className="nav-link">Home</Link>
             </li>
+
             <li className="nav-item d-none d-sm-inline-block">
-              <Link to="#" className="nav-link">
-                Contact
-              </Link>
+              <Link to="#" className="nav-link">Contact</Link>
             </li>
           </ul>
-          <ul className="navbar-nav ml-auto">
-            {/* <li className="nav-item">
-              <a
-                className="nav-link"
-                data-widget="navbar-search"
-                href="#"
-                role="button"
-              >
-                <i className="fas fa-search" />
-              </a>
-              <div className="navbar-search-block">
-                <form className="form-inline">
-                  <div className="input-group input-group-sm">
-                    <input
-                      className="form-control form-control-navbar"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <div className="input-group-append">
-                      <button className="btn btn-navbar" type="submit">
-                        <i className="fas fa-search" />
-                      </button>
-                      <button
-                        className="btn btn-navbar"
-                        type="button"
-                        data-widget="navbar-search"
-                      >
-                        <i className="fas fa-times" />
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li> */}
 
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -70,7 +37,7 @@ function Header() {
                 href="#"
                 role="button"
               >
-                <i className="fas fa-expand-arrows-alt" />
+                <i className={`fas fa-expand-arrows-alt ${styles.headerIcon}`} />
               </a>
             </li>
           </ul>
@@ -79,4 +46,5 @@ function Header() {
     </div>
   );
 }
+
 export default Header;
